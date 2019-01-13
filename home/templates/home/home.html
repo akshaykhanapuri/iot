@@ -1,0 +1,10 @@
+<h1> LED Controller </h1>
+</br>
+<form method="POST" action="{% url 'home' %}">
+  {% csrf_token %}
+  <input type="radio" name="choice" value="ON" > ON<br />
+  <input type="radio" name="choice" value="OFF" > OFF<br /><br />
+  <input type = "submit" value = "Submit!"></input><br />
+</form>
+<br />
+<h2>LED State: {{key}}</h2>
